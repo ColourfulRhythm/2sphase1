@@ -111,13 +111,37 @@ body {
 .sheet-container {
     background: #ffffff;
     border-radius: 12px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: visible;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border: 1px solid #e0e0e0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #c0c0c0 #f0f0f0;
+}
+
+.sheet-container::-webkit-scrollbar {
+    height: 12px;
+}
+
+.sheet-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 6px;
+}
+
+.sheet-container::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 6px;
+    border: 2px solid #f0f0f0;
+}
+
+.sheet-container::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
 }
 
 .data-table {
     width: 100%;
+    min-width: 1000px;
     border-collapse: collapse;
     font-size: 14px;
     background: white;
@@ -128,6 +152,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .data-table th {
