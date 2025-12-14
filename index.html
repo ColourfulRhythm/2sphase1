@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 Seasons Phase 1 - N1.5bn Breakdown</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <h1 class="title">2 Seasons Phase 1</h1>
             <p class="subtitle">N1.5 Billion Infrastructure Breakdown</p>
-            <button class="excel-export-btn" id="excelExportBtn">
-                <svg class="excel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14 2v6h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 13H8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16 17H8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10 9H8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <button class="view-toggle-btn" id="viewToggleBtn">
+                <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 3h18v18H3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 9h18M9 3v18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span>Export to Excel</span>
+                <span>Switch to Sheet Format</span>
             </button>
         </header>
 
@@ -256,6 +252,60 @@
                         <p class="outcome-text">Studio rentals, brand deals, creator partnerships</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Sheet View -->
+        <div class="sheet-view" id="sheetView" style="display: none;">
+            <div class="sheet-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Zone</th>
+                            <th>Acreage</th>
+                            <th>Budget Allocation</th>
+                            <th>Key Deliverables</th>
+                            <th>Primary Outcome / Revenue Trigger</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Core Infrastructure</td>
+                            <td>Across 85 acres</td>
+                            <td>₦350M - ₦450M</td>
+                            <td>Internal roads, Drainage, Solar mini-grid, Boreholes, Fencing, Gatehouses, Security lighting</td>
+                            <td>Land becomes build-ready, credible, and investable</td>
+                        </tr>
+                        <tr>
+                            <td>Wellness Village</td>
+                            <td>25 acres</td>
+                            <td>₦250M - ₦300M</td>
+                            <td>Therapy pavilion, Yoga deck, Juice bar, Tea house, Outdoor gym, Fruit forest, Eco-spa pods</td>
+                            <td>Memberships, retreats, wellness tourism revenue</td>
+                        </tr>
+                        <tr>
+                            <td>Residential (Starter Phase)</td>
+                            <td>35 acres (of 35 acres total)</td>
+                            <td>₦300M - ₦400M</td>
+                            <td>Serviced plots, 4–6 show homes, Daycare/school shell, Mini park</td>
+                            <td>Plot sales, home sales, cooperative & mortgage inflow</td>
+                        </tr>
+                        <tr>
+                            <td>Agro-Tusks (Agro & Storage)</td>
+                            <td>10-20 acres</td>
+                            <td>₦150M - ₦200M</td>
+                            <td>Aggregation sheds, Cold storage, Processing area, Truck access roads, Cultivation</td>
+                            <td>Produce sales, off-take contracts, impact funding</td>
+                        </tr>
+                        <tr>
+                            <td>Creative & Streaming Village</td>
+                            <td>5 acres</td>
+                            <td>₦250M - ₦300M</td>
+                            <td>Modular studios, Outdoor sets, Co-working pavilion, Post-production suite, Residency pods</td>
+                            <td>Studio rentals, brand deals, creator partnerships</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
